@@ -1,8 +1,8 @@
-zuul.ignored-services: "*"
+#zuul.ignored-services: "*"
 zuul.prefix:  /api
-zuul.routes.organizationservice: /organization/**
-zuul.routes.licensingservice: /licensing/**
-zuul.routes.authenticationservice: /auth/**
+#zuul.routes.organizationservice: /organization/**
+#zuul.routes.licensingservice: /licensing/**
+#zuul.routes.authenticationservice: /auth/**
 #zuul.routes.licensestatic.path: /licensestatic/**
 #zuul.routes.licensestatic.url:  http://licenseservice-static:8081
 #zuul.routes.licensestatic.serviceId: licensestatic
@@ -14,3 +14,6 @@ hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
 #hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
 #licensingservice.ribbon.ReadTimeout: 2
 signing.key: "345345fsdfsf5345"
+
+zuul.routes.licensestatic.path: /in2/**
+zuul.routes.licensestatic.url:  http://www.in2.es
